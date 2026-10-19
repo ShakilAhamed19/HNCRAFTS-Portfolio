@@ -6,6 +6,8 @@ const ArrowUpRight = ({ className = "" }: { className?: string }) => (
 
 const CodeIcon = () => <span aria-hidden="true">&lt;/&gt;</span>;
 
+const instagramUrl = "https://www.instagram.com/codegal_ks?exln=M3g0ZnE3cnhoNnFx";
+
 const skills = [
   { name: "HTML5", level: "Advanced", value: 92, mark: "H" },
   { name: "CSS3", level: "Advanced", value: 88, mark: "C" },
@@ -78,7 +80,15 @@ export default function Home() {
           <a href="#work">Work</a>
           <a href="#learning">Learning</a>
         </nav>
-        <a className="header-cta" href="#contact">Let&apos;s talk <ArrowUpRight /></a>
+        <a
+          className="header-cta"
+          href={instagramUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Let&apos;s talk on Instagram (opens in a new tab)"
+        >
+          Let&apos;s talk <ArrowUpRight />
+        </a>
       </header>
 
       <section className="hero" id="top">
@@ -209,7 +219,15 @@ export default function Home() {
         <p className="contact-kicker">Have an idea or opportunity?</p>
         <h2>Let&apos;s build something<br /><em>meaningful.</em></h2>
         <p className="contact-copy">I&apos;m open to internships, collaborations, and conversations about web development, automation, AI, or IoT.</p>
-        <a className="button button-dark" href="#top">Start a conversation <ArrowUpRight /></a>
+        <a
+          className="button button-dark"
+          href={instagramUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Start a conversation on Instagram (opens in a new tab)"
+        >
+          Start a conversation <ArrowUpRight />
+        </a>
       </section>
 
       <footer>
