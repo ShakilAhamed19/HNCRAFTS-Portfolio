@@ -8,6 +8,15 @@ const CodeIcon = () => <span aria-hidden="true">&lt;/&gt;</span>;
 
 const instagramUrl = "https://www.instagram.com/codegal_ks?exln=M3g0ZnE3cnhoNnFx";
 
+const interests = [
+  "Web development",
+  "Python automation",
+  "Angular",
+  "Artificial intelligence",
+  "Internet of things",
+  "Mobile apps",
+];
+
 const skills = [
   { name: "HTML5", level: "Advanced", value: 92, mark: "H" },
   { name: "CSS3", level: "Advanced", value: 88, mark: "C" },
@@ -21,18 +30,18 @@ const skills = [
 const projects = [
   {
     number: "01",
-    title: "Smart Baby\nMonitoring System",
+    title: "Gold Wastage\nCalculator",
     description:
-      "An IoT-based monitoring concept designed to help caregivers track important conditions and respond quickly through thoughtful alerts.",
-    tags: ["IoT", "Sensors", "Automation"],
+      "A focused calculator that simplifies gold wastage calculations and presents clear results for faster, more consistent everyday estimates.",
+    tags: ["Calculator", "Web App", "Utility"],
     tone: "lime",
   },
   {
     number: "02",
-    title: "Leave Management\nSystem",
+    title: "Indian\nQuestion Bank",
     description:
-      "A practical workflow application that makes leave requests, approvals, and status tracking simpler for students and teams.",
-    tags: ["Web App", "UI/UX", "Workflow"],
+      "A structured question-bank application designed to make study material easier to organize, browse, and revisit for focused learning.",
+    tags: ["Education", "Question Bank", "Web App"],
     tone: "ink",
   },
   {
@@ -127,10 +136,16 @@ export default function Home() {
       </section>
 
       <section className="ticker" aria-label="Core interests">
-        <div>
-          <span>Web development</span><i>✦</i><span>Python automation</span><i>✦</i>
-          <span>Angular</span><i>✦</i><span>Artificial intelligence</span><i>✦</i><span>Internet of things</span><i>✦</i>
-          <span>Mobile apps</span>
+        <div className="ticker-track">
+          {[0, 1].map((group) => (
+            <div className="ticker-group" aria-hidden={group === 1 ? "true" : undefined} key={group}>
+              {interests.map((interest) => (
+                <span className="ticker-item" key={interest}>
+                  <span>{interest}</span><i aria-hidden="true">✦</i>
+                </span>
+              ))}
+            </div>
+          ))}
         </div>
       </section>
 
@@ -141,7 +156,7 @@ export default function Home() {
           <div className="about-copy">
             <p className="lead">I&apos;m Shakil Ahamed—an Information Technology student, developer, and curious problem-solver who enjoys turning ideas into useful digital products.</p>
             <p>My interests span frontend development with HTML, CSS, Tailwind CSS, and Angular, along with Python automation, artificial intelligence, IoT, and mobile application development. I enjoy learning how different technologies can work together to solve everyday challenges.</p>
-            <p>Projects such as a Smart Baby Monitoring System, a Leave Management System, and Python automation tools have helped me strengthen my problem-solving, teamwork, and software design skills. My goal is to grow into a full-stack developer who creates clean, maintainable, and meaningful applications.</p>
+            <p>Projects such as a Gold Wastage Calculator, an Indian Question Bank, and Python automation tools have helped me strengthen my problem-solving, teamwork, and software design skills. My goal is to grow into a full-stack developer who creates clean, maintainable, and meaningful applications.</p>
             <div className="values">
               <span><b>01</b> Practical thinking</span>
               <span><b>02</b> Clean execution</span>
@@ -183,7 +198,7 @@ export default function Home() {
             <article className={`project-card ${project.tone}`} key={project.number}>
               <span className="project-number">{project.number}</span>
               <div className="project-icon" aria-hidden="true">
-                {project.number === "01" ? "⌁" : project.number === "02" ? "✓" : "{ }"}
+                {project.number === "01" ? "÷" : project.number === "02" ? "?" : "{ }"}
               </div>
               <h3>{project.title.split("\n").map((line) => <span key={line}>{line}<br /></span>)}</h3>
               <p>{project.description}</p>
