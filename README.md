@@ -1,6 +1,6 @@
-# HNCRAFTS Portfolio
+# Code Galaxy Portfolio
 
-The personal portfolio of Shakil Ahamed, an Information Technology student and developer interested in web development, Python automation, artificial intelligence, IoT, and mobile applications.
+The personal portfolio of Shakil Ahamed, an Information Technology student and aspiring full-stack developer interested in Angular, modern web development, Python automation, artificial intelligence, IoT, and mobile applications.
 
 ## Run locally
 
