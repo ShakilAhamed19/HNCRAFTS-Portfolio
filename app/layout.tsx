@@ -8,25 +8,23 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "hncrafts.dev";
+  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "codegalaxy.dev";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.includes("localhost") ? "http" : "https");
   const base = new URL(`${protocol}://${host}`);
 
   return {
     metadataBase: base,
-    title: "HNCRAFTS — Shakil Ahamed",
-    description: "Portfolio of Shakil Ahamed, an IT student and developer building useful experiences across web, Python, AI, IoT, and mobile.",
+    title: "Code Galaxy — Shakil Ahamed",
+    description: "Portfolio of Shakil Ahamed, an IT student and aspiring full-stack developer building useful experiences with Angular, Python, AI, IoT, and modern web technologies.",
     openGraph: {
-      title: "HNCRAFTS — Shakil Ahamed",
-      description: "IT student and developer building useful digital experiences.",
+      title: "Code Galaxy — Shakil Ahamed",
+      description: "IT student and aspiring full-stack developer building useful digital experiences with Angular and modern technologies.",
       type: "website",
-      images: [{ url: "/og.png", width: 1732, height: 909, alt: "HNCRAFTS — Shakil Ahamed, Developer" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "HNCRAFTS — Shakil Ahamed",
-      description: "IT student and developer building useful digital experiences.",
-      images: ["/og.png"],
+      title: "Code Galaxy — Shakil Ahamed",
+      description: "IT student and aspiring full-stack developer building useful digital experiences.",
     },
   };
 }

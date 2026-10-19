@@ -10,6 +10,7 @@ const skills = [
   { name: "HTML5", level: "Advanced", value: 92, mark: "H" },
   { name: "CSS3", level: "Advanced", value: 88, mark: "C" },
   { name: "Tailwind CSS", level: "Proficient", value: 82, mark: "T" },
+  { name: "Angular", level: "Proficient", value: 78, mark: "NG" },
   { name: "Python", level: "Proficient", value: 84, mark: "Py" },
   { name: "AI & Automation", level: "Exploring", value: 72, mark: "AI" },
   { name: "IoT Development", level: "Hands-on", value: 76, mark: "IoT" },
@@ -67,9 +68,9 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="HNCRAFTS home">
-          <span className="brand-mark">HN</span>
-          <span className="brand-name">HNCRAFTS<span>.</span></span>
+        <a className="brand" href="#top" aria-label="Code Galaxy home">
+          <span className="brand-mark">CG</span>
+          <span className="brand-name">Code Galaxy<span>.</span></span>
         </a>
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
@@ -86,8 +87,9 @@ export default function Home() {
           <p className="hero-kicker">Hi, I&apos;m Shakil Ahamed.</p>
           <h1>I turn ideas into<br /><em>useful digital</em><br />experiences.</h1>
           <p className="hero-intro">
-            IT student, software developer, and curious builder focused on practical,
-            user-friendly products for the web and beyond.
+            I&apos;m an IT student and aspiring full-stack developer from India. I build
+            responsive web experiences with Angular and modern frontend tools, while
+            exploring Python automation, AI, and IoT to solve real-world problems.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#work">Explore my work <ArrowUpRight /></a>
@@ -117,7 +119,7 @@ export default function Home() {
       <section className="ticker" aria-label="Core interests">
         <div>
           <span>Web development</span><i>✦</i><span>Python automation</span><i>✦</i>
-          <span>Artificial intelligence</span><i>✦</i><span>Internet of things</span><i>✦</i>
+          <span>Angular</span><i>✦</i><span>Artificial intelligence</span><i>✦</i><span>Internet of things</span><i>✦</i>
           <span>Mobile apps</span>
         </div>
       </section>
@@ -127,9 +129,9 @@ export default function Home() {
         <div className="about-grid">
           <h2>Curiosity is my<br />favorite <em>tool.</em></h2>
           <div className="about-copy">
-            <p className="lead">I&apos;m an Information Technology student with a strong passion for software development and modern web technologies.</p>
-            <p>I enjoy building responsive applications that solve real-world problems. Every project is a chance to understand people better, make a complex process feel simple, and grow into a more thoughtful developer.</p>
-            <p>I believe in continuous learning, writing clean and maintainable code, and creating experiences that feel as good to use as they are useful.</p>
+            <p className="lead">I&apos;m Shakil Ahamed—an Information Technology student, developer, and curious problem-solver who enjoys turning ideas into useful digital products.</p>
+            <p>My interests span frontend development with HTML, CSS, Tailwind CSS, and Angular, along with Python automation, artificial intelligence, IoT, and mobile application development. I enjoy learning how different technologies can work together to solve everyday challenges.</p>
+            <p>Projects such as a Smart Baby Monitoring System, a Leave Management System, and Python automation tools have helped me strengthen my problem-solving, teamwork, and software design skills. My goal is to grow into a full-stack developer who creates clean, maintainable, and meaningful applications.</p>
             <div className="values">
               <span><b>01</b> Practical thinking</span>
               <span><b>02</b> Clean execution</span>
@@ -203,7 +205,7 @@ export default function Home() {
       </section>
 
       <section className="contact" id="contact">
-        <div className="contact-orbit"><span>HN</span></div>
+        <div className="contact-orbit"><span>CG</span></div>
         <p className="contact-kicker">Have an idea or opportunity?</p>
         <h2>Let&apos;s build something<br /><em>meaningful.</em></h2>
         <p className="contact-copy">I&apos;m open to internships, collaborations, and conversations about web development, automation, AI, or IoT.</p>
@@ -211,7 +213,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <a className="brand footer-brand" href="#top"><span className="brand-mark">HN</span><span className="brand-name">HNCRAFTS<span>.</span></span></a>
+        <a className="brand footer-brand" href="#top"><span className="brand-mark">CG</span><span className="brand-name">Code Galaxy<span>.</span></span></a>
         <p>Designing. Developing. Discovering.</p>
         <p>© 2026 Shakil Ahamed</p>
       </footer>
