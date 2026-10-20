@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollAnimations from "./ScrollAnimations";
 
 const ArrowUpRight = ({ className = "" }: { className?: string }) => (
   <span className={className} aria-hidden="true">↗</span>
@@ -78,6 +79,7 @@ const learning = [
 export default function Home() {
   return (
     <main>
+      <ScrollAnimations />
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Code Galaxy home">
           <span className="brand-mark">CG</span>
